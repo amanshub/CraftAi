@@ -59,8 +59,8 @@
         --craft-earth: hsl(25, 30%, 25%);
         --craft-clay: hsl(15, 40%, 45%);
         --craft-sage: hsl(120, 15%, 45%);
-    }*/
-}
+    }
+}*/
 
 /* Reset and Base Styles */
 * {
@@ -1067,3 +1067,4 @@ form {
     }
 
 }
+
