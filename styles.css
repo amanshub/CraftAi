@@ -42,7 +42,7 @@
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     :root {
         --background: hsl(25, 25%, 8%);
         --foreground: hsl(40, 15%, 95%);
@@ -59,7 +59,7 @@
         --craft-earth: hsl(25, 30%, 25%);
         --craft-clay: hsl(15, 40%, 45%);
         --craft-sage: hsl(120, 15%, 45%);
-    }
+    }*/
 }
 
 /* Reset and Base Styles */
@@ -1065,4 +1065,5 @@ form {
     .cta-card h2 {
         font-size: 1.5rem;
     }
+
 }
