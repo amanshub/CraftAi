@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraftAI - AI-Powered Marketplace Assistant for Local Artisans</title>
+    <meta name="description" content="Transform your craft business with AI-powered storytelling. Help local artisans market their work, tell their stories, and reach new digital audiences." />
+    <meta name="author" content="CraftAI" />
+    <meta name="keywords" content="local artisans, AI storytelling, craft marketplace, handmade, artisan business, digital marketing" />
+    
+    <meta property="og:title" content="CraftAI - Empower Local Artisans with AI" />
+    <meta property="og:description" content="AI-driven platform helping local artisans transform their craft into compelling stories and expand their reach to new digital audiences." />
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>CraftAI</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#artisans">Artisans</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+                
+                <!-- Desktop CTA -->
+                <div class="nav-cta">
+                    <button class="btn btn-ghost" onclick="showSignIn()">Sign In</button>
+                    <button class="btn btn-primary" onclick="showGetStarted()">Get Started</button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn">
+                    <button class="btn btn-ghost" onclick="toggleMobileMenu()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+                <a href="#artisans" onclick="closeMobileMenu()">Artisans</a>
+                <a href="#demo" onclick="closeMobileMenu()">Demo</a>
+                <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+                <button class="btn btn-ghost" onclick="showSignIn()">Sign In</button>
+                <button class="btn btn-primary" onclick="showGetStarted()">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="src/assets/hero-artisans.jpg" alt="Local artisans working on their crafts" />
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <h1>
+                        Empower Local
+                        <span class="gradient-text">Artisans with AI</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Transform your craft into compelling stories, reach new audiences, and grow your artisan business with our AI-powered marketplace assistant.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="startJourney()">Start Your Journey</button>
+                        <button class="btn btn-outline btn-lg" onclick="scrollToHowItWorks()">See How It Works</button>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Artisans Empowered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10k+</div>
+                            <div class="stat-label">Stories Generated</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">300%</div>
+                            <div class="stat-label">Average Reach Increase</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Three simple steps to transform your artisan business with the power of AI storytelling</p>
+                </div>
+                
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="step-number">1</div>
+                            <h3>Share Your Story</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>Tell us about your craft, your inspiration, and your journey as an artisan. Our AI listens and learns your unique voice.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                </svg>
+                            </div>
+                            <div class="step-number">2</div>
+                            <h3>AI Creates Magic</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>Our intelligent assistant transforms your story into compelling product descriptions, social media content, and marketing materials.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                </svg>
+                            </div>
+                            <div class="step-number">3</div>
+                            <h3>Reach New Markets</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>Connect with customers who appreciate handmade crafts. Expand your reach beyond local markets to a global audience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Artisans Section -->
+        <section id="artisans" class="featured-artisans">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Artisans</h2>
+                    <p>Meet some of the talented creators who are transforming their businesses with CraftAI</p>
+                </div>
+                
+                <div class="artisan-grid">
+                    <div class="artisan-card">
+                        <img src="#" alt="Beautiful handcrafted pottery" />
+                        <div class="artisan-content">
+                            <h3>Traditional Pottery</h3>
+                            <p class="artisan-name">Sarah Chen</p>
+                            <p class="artisan-description">
+                                "CraftAI helped me tell the story of my grandmother's pottery techniques. My online sales increased by 400% in just two months!"
+                            </p>
+                            <div class="artisan-stats">
+                                <span>15 years experience</span>
+                                <span>Wood-fired ceramics</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="artisan-card">
+                        <img src="#" alt="Handwoven textiles and fabrics" />
+                        <div class="artisan-content">
+                            <h3>Handwoven Textiles</h3>
+                            <p class="artisan-name">Maria Rodriguez</p>
+                            <p class="artisan-description">
+                                "The AI perfectly captured the cultural heritage behind my weaving. Now customers understand the heart of my work."
+                            </p>
+                            <div class="artisan-stats">
+                                <span>Traditional techniques</span>
+                                <span>Sustainable materials</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="artisan-card">
+                        <img src="#" alt="Handcrafted wooden furniture and decor" />
+                        <div class="artisan-content">
+                            <h3>Custom Woodwork</h3>
+                            <p class="artisan-name">David Thompson</p>
+                            <p class="artisan-description">
+                                "From simple descriptions to compelling stories - CraftAI transformed how I present my handcrafted furniture to the world."
+                            </p>
+                            <div class="artisan-stats">
+                                <span>Reclaimed wood specialist</span>
+                                <span>Custom furniture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Story Demo Section -->
+        <section id="demo" class="ai-demo">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI Story Generation Demo</h2>
+                    <p>See how our AI transforms your simple story into compelling marketing content that resonates with customers</p>
+                </div>
+                
+                <div class="demo-grid">
+                    <!-- Input Side -->
+                    <div class="demo-card">
+                        <div class="demo-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 3h6v6l-6-6Z"></path>
+                                <path d="M9 21H3v-6l6 6Z"></path>
+                                <path d="M15 3v6h6"></path>
+                                <path d="M9 21v-6H3"></path>
+                            </svg>
+                            <h3>Your Story (Input)</h3>
+                        </div>
+                        <div class="demo-content">
+                            <textarea 
+                                id="storyInput"
+                                placeholder="Tell us about your craft, your journey, and what makes your work special..."
+                                rows="8"
+                            ></textarea>
+                            <div class="demo-buttons">
+                                <button class="btn btn-primary" onclick="generateStory()" id="generateBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                    </svg>
+                                    Generate Story
+                                </button>
+                                <button class="btn btn-outline" onclick="loadSample()">Try Sample</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Side -->
+                    <div class="demo-card">
+                        <div class="demo-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                            </svg>
+                            <h3>AI-Generated Marketing Content</h3>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-output" id="storyOutput">
+                                <div class="placeholder">
+                                    Your AI-generated story will appear here...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-footer">
+                    <p>This is just a preview. The full platform offers personalized content for social media, product descriptions, and more.</p>
+                    <button class="btn btn-lg btn-accent" onclick="getFullAccess()">Get Full Access</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ready to Transform Your Craft Business?</h2>
+                    <p>Join hundreds of artisans who are already using AI to tell their stories and grow their businesses.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>AI-powered story generation</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Social media content creation</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Product description optimization</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Market reach analytics</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Customer engagement tools</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>24/7 AI assistant support</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="startFreeTrial()">Start Free Trial</button>
+                        <button class="btn btn-outline btn-lg" onclick="scheduleDemo()">Schedule Demo</button>
+                    </div>
+                    
+                    <p class="cta-disclaimer">No credit card required • 14-day free trial • Cancel anytime</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>CraftAI</h3>
+                    <p>Empowering local artisans with AI-driven storytelling tools to reach new audiences and grow their craft businesses.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#demo">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" onclick="showHelp()">Help Center</a></li>
+                        <li><a href="#" onclick="showContact()">Contact Us</a></li>
+                        <li><a href="#" onclick="showPrivacy()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showTerms()">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CraftAI. All rights reserved. Made for artisans everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Get Started with CraftAI</h3>
+                <button class="modal-close" onclick="closeModal('contactModal')">&times;</button>
+            </div>
+            <form id="contactForm" onsubmit="submitContactForm(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="craft">Type of Craft</label>
+                    <select id="craft" name="craft">
+                        <option value="">Select your craft</option>
+                        <option value="pottery">Pottery & Ceramics</option>
+                        <option value="textiles">Textiles & Weaving</option>
+                        <option value="woodwork">Woodworking</option>
+                        <option value="jewelry">Jewelry Making</option>
+                        <option value="painting">Painting & Art</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <select id="experience" name="experience">
+                        <option value="">Select experience level</option>
+                        <option value="beginner">Less than 1 year</option>
+                        <option value="intermediate">1-5 years</option>
+                        <option value="experienced">5-10 years</option>
+                        <option value="expert">More than 10 years</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="goals">What are your main goals? *</label>
+                    <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your business goals and how CraftAI can help you..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <span class="checkmark"></span>
+                        Subscribe to our newsletter for artisan tips and AI updates
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" onclick="closeModal('contactModal')">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Thank You!</h3>
+                <button class="modal-close" onclick="closeModal('successModal')">&times;</button>
+            </div>
+            <div class="success-content">
+                <div class="success-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
+                </div>
+                <h4>Your application has been submitted!</h4>
+                <p>We'll review your information and get back to you within 24 hours with next steps to start your CraftAI journey.</p>
+                <button class="btn btn-primary" onclick="closeModal('successModal')">Continue Exploring</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
